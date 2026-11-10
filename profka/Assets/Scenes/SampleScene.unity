@@ -1900,9 +1900,9 @@ MonoBehaviour:
   returnspeed: 2
   Force: 10
   mintiltangle: 15
-  inercia: 0.55
+  inertia: 0.55
   friction: 0.95
-  complace: {x: 0, y: -0.5}
+  complace: {x: 0, y: -0.7}
   groundCheck: {fileID: 141580688}
   checkRadius: 0.25
   groundLayer:
