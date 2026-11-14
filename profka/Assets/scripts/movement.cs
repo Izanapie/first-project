@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class movement : MonoBehaviour
 {
+    [Header("игрок 1 или 2")]
+    public bool player1 = true;
     [Header("физика")]
     public Rigidbody2D rb; // сюда закинуть объект 
 
@@ -39,11 +41,11 @@ public class movement : MonoBehaviour
     {
         if (Keyboard.current == null) return; // управление, надо будет чутка переделать когда сплитскрин надо будет делать, да и кнопки получше
 
-        bool holdLeft = Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed;
-        bool holdRight = Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed;
+        bool holdLeft = player1 ? Keyboard.current.aKey.isPressed : Keyboard.current.leftArrowKey.isPressed;
+        bool holdRight = player1 ? Keyboard.current.dKey.isPressed : Keyboard.current.rightArrowKey.isPressed;
 
-        bool releasedLeft = Keyboard.current.aKey.wasReleasedThisFrame || Keyboard.current.leftArrowKey.wasReleasedThisFrame;
-        bool releasedRight = Keyboard.current.dKey.wasReleasedThisFrame || Keyboard.current.rightArrowKey.wasReleasedThisFrame;
+        bool releasedLeft = player1 ? Keyboard.current.aKey.wasReleasedThisFrame : Keyboard.current.leftArrowKey.wasReleasedThisFrame;
+        bool releasedRight = player1 ? Keyboard.current.dKey.wasReleasedThisFrame : Keyboard.current.rightArrowKey.wasReleasedThisFrame;
 
 
         if (holdLeft && !holdRight) // если удерживается кнопка влево то
