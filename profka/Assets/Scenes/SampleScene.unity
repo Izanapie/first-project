@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 43104757}
   - component: {fileID: 43104756}
   - component: {fileID: 43104755}
+  - component: {fileID: 43104758}
   m_Layer: 0
   m_Name: armr
   m_TagString: Untagged
@@ -195,7 +196,7 @@ Rigidbody2D:
   m_Mass: 0.05
   m_LinearDamping: 0
   m_AngularDamping: 2
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -267,6 +268,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &43104758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43104753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69c777f44650b24390512b2fc8718ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::gunscript
+  enemytarget: {fileID: 1713641197}
+  firepoint: {fileID: 819126000}
+  projectileprefab: {fileID: 3935165843170882643, guid: 309c14d284a410c4795b410f0ef7b8dd, type: 3}
+  playerrb: {fileID: 216357880}
+  player1: 0
+  aimrange: 8
+  aimtorque: 35
+  aimangleoffset: -90
+  maxammo: 6
+  projpershot: 1
+  spreadangle: 3
+  firecooldown: 0.35
+  recoil: 4
 --- !u!1 &141580687
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +516,7 @@ GameObject:
   - component: {fileID: 216357880}
   - component: {fileID: 216357879}
   - component: {fileID: 216357878}
+  - component: {fileID: 216357883}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -666,6 +693,19 @@ Transform:
   - {fileID: 1072803861}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &216357883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216357877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae56c9299c10d404d8f3235b01bd2822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::health
+  maxhealth: 100
 --- !u!1 &216505822
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +1024,7 @@ Rigidbody2D:
   m_Mass: 0.05
   m_LinearDamping: 0
   m_AngularDamping: 2
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1068,6 +1108,7 @@ GameObject:
   - component: {fileID: 426967795}
   - component: {fileID: 426967797}
   - component: {fileID: 426967796}
+  - component: {fileID: 426967798}
   m_Layer: 0
   m_Name: armr
   m_TagString: Untagged
@@ -1192,7 +1233,7 @@ Rigidbody2D:
   m_Mass: 0.05
   m_LinearDamping: 0
   m_AngularDamping: 2
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1204,6 +1245,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &426967798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426967793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69c777f44650b24390512b2fc8718ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::gunscript
+  enemytarget: {fileID: 216357882}
+  firepoint: {fileID: 427119483}
+  projectileprefab: {fileID: 3935165843170882643, guid: 309c14d284a410c4795b410f0ef7b8dd, type: 3}
+  playerrb: {fileID: 1713641194}
+  player1: 1
+  aimrange: 8
+  aimtorque: 35
+  aimangleoffset: -90
+  maxammo: 6
+  projpershot: 1
+  spreadangle: 3
+  firecooldown: 0.35
+  recoil: 4
 --- !u!1 &427119482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,13 +1294,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427119482}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 426967794}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +1930,7 @@ Rigidbody2D:
   m_Mass: 0.05
   m_LinearDamping: 0
   m_AngularDamping: 2
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2708,6 +2774,7 @@ GameObject:
   - component: {fileID: 1713641194}
   - component: {fileID: 1713641198}
   - component: {fileID: 1713641199}
+  - component: {fileID: 1713641200}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -2884,6 +2951,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.26, y: 0.9999999}
   m_Direction: 0
+--- !u!114 &1713641200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713641193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae56c9299c10d404d8f3235b01bd2822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::health
+  maxhealth: 100
 --- !u!1 &1865352790
 GameObject:
   m_ObjectHideFlags: 0
