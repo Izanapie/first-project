@@ -148,8 +148,8 @@ Transform:
   m_GameObject: {fileID: 43104753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0054, y: 0.0258, z: 0}
-  m_LocalScale: {x: 0.08696443, y: 0.35004488, z: 1}
+  m_LocalPosition: {x: -0.0164, y: 0.0318, z: 0}
+  m_LocalScale: {x: 0.90099585, y: 1.0763865, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 819126000}
@@ -171,7 +171,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.4}
-  m_ConnectedAnchor: {x: 0.0053999787, y: 0.16581789}
+  m_ConnectedAnchor: {x: -0.016400004, y: 0.46235457}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -257,7 +257,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 3015177024873187116, guid: 24c0a25948cf1674b95e8e22f0bbcc51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -282,17 +282,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::gunscript
   enemytarget: {fileID: 1713641197}
   firepoint: {fileID: 819126000}
-  projectileprefab: {fileID: 3935165843170882643, guid: 309c14d284a410c4795b410f0ef7b8dd, type: 3}
+  gunrenderer: {fileID: 0}
   playerrb: {fileID: 216357880}
   player1: 0
   aimrange: 8
   aimtorque: 35
   aimangleoffset: -90
-  maxammo: 6
-  projpershot: 1
-  spreadangle: 3
-  firecooldown: 0.35
-  recoil: 4
+  hasweapon: 0
 --- !u!1 &141580687
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +660,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4209823602165562687, guid: a999f2772ffb60d4e8869ae43c4cb7fa, type: 3}
+  m_Sprite: {fileID: -3604431706081718580, guid: 91d4414a1081df64d97ac031cd7b2a7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -684,8 +680,8 @@ Transform:
   m_GameObject: {fileID: 216357877}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.72, y: 16.02, z: 0}
-  m_LocalScale: {x: 3.7903845, y: 3.5576267, z: 1}
+  m_LocalPosition: {x: -3.5299, y: 16.1536, z: 0}
+  m_LocalScale: {x: 6.166622, y: 5.837543, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 43104754}
@@ -999,7 +995,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.4}
-  m_ConnectedAnchor: {x: 0.0053999787, y: 0.16581789}
+  m_ConnectedAnchor: {x: 0.005399988, y: 0.16581771}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -1125,8 +1121,8 @@ Transform:
   m_GameObject: {fileID: 426967793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0054, y: 0.0258, z: 0}
-  m_LocalScale: {x: 0.08696443, y: 0.35004488, z: 1}
+  m_LocalPosition: {x: -0.0137, y: 0.0302, z: 0}
+  m_LocalScale: {x: 0.8456532, y: 1.1174699, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 427119483}
@@ -1181,7 +1177,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -1603291472181913768, guid: 54d229ae8bbeff94a892fc337440165f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1208,7 +1204,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.4}
-  m_ConnectedAnchor: {x: 0.0053999946, y: 0.16581789}
+  m_ConnectedAnchor: {x: -0.013699998, y: 0.47718796}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -1259,17 +1255,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::gunscript
   enemytarget: {fileID: 216357882}
   firepoint: {fileID: 427119483}
-  projectileprefab: {fileID: 3935165843170882643, guid: 309c14d284a410c4795b410f0ef7b8dd, type: 3}
+  gunrenderer: {fileID: 0}
   playerrb: {fileID: 1713641194}
   player1: 1
   aimrange: 8
   aimtorque: 35
   aimangleoffset: -90
-  maxammo: 6
-  projpershot: 1
-  spreadangle: 3
-  firecooldown: 0.35
-  recoil: 4
+  hasweapon: 0
 --- !u!1 &427119482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1287,7 @@ Transform:
   m_GameObject: {fileID: 427119482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0069, y: -0.0783, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1882,8 +1874,8 @@ Transform:
   m_GameObject: {fileID: 648568884}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0054, y: 0.0258, z: 0}
-  m_LocalScale: {x: 0.08696443, y: 0.35004488, z: 1}
+  m_LocalPosition: {x: -0.01069, y: 0.02994, z: 0}
+  m_LocalScale: {x: 0.8140588, y: 1.0935893, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1612463373}
@@ -1905,7 +1897,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.4}
-  m_ConnectedAnchor: {x: 0.0053999946, y: 0.16581789}
+  m_ConnectedAnchor: {x: -0.010690001, y: 0.46737581}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -1991,7 +1983,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -1603291472181913768, guid: 54d229ae8bbeff94a892fc337440165f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2858,7 +2850,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4209823602165562687, guid: a999f2772ffb60d4e8869ae43c4cb7fa, type: 3}
+  m_Sprite: {fileID: -8527442550737655860, guid: 57fd041980bd82e4a944ff7b4b0dbd8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2878,8 +2870,8 @@ Transform:
   m_GameObject: {fileID: 1713641193}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 16.02, z: 0}
-  m_LocalScale: {x: 3.7903845, y: 3.5576267, z: 1}
+  m_LocalPosition: {x: -0.53, y: 16.03, z: 0}
+  m_LocalScale: {x: 6.20186, y: 5.571901, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 426967794}
@@ -2948,8 +2940,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.26, y: 0.9999999}
+  m_Offset: {x: -0.00082852517, y: 0.001844311}
+  m_Size: {x: 0.16886652, y: 0.64958173}
   m_Direction: 0
 --- !u!114 &1713641200
 MonoBehaviour:
